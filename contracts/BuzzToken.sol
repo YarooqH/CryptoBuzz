@@ -95,12 +95,12 @@ contract BuzzToken is ERC721 {
         return createBuzz(0, 0, msg.sender);
     }
     
-    /** @dev Function to breed 2 buzzes to create a new one
+    /** @dev Function to Create 2 buzzes to create a new one
       * @param basedId ID of new buzz's based (one parent)
       * @param suitId ID of new buzz's suit (other parent)
       * @return The new buzz's ID
       */
-    function breedBuzzs(uint256 basedId, uint256 suitId) external payable returns (uint256) {
+    function CreateBuzzs(uint256 basedId, uint256 suitId) external payable returns (uint256) {
         require(msg.value == 0.05 ether);
         return createBuzz(basedId, suitId, msg.sender);
     }

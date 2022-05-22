@@ -8,6 +8,4 @@ I realize that im still submitting this late and it is still not complete. i hig
 ## Crypto Buzz - Where you can Buy & Create your own Buzz Lightyears
 Idea was to make something like cryptokitties
 
-![Main Page](./HomePage.png)
-![Owned Assets](./OwnedBuzz.png)
-![Fullpage](./FullPage.png)
+![Fullpage](./MainPage.png)

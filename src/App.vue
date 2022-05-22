@@ -3,7 +3,7 @@
     <b-row class="header-row">
       <b-col>
         <h1>CryptoBuzz</h1>
-        <p>Collect and breed digital Based Buzz Lightyear.</p>
+        <p>Buy and Create your Buzz Light-years.</p>
       </b-col>
     </b-row>
 
@@ -18,7 +18,7 @@
         <h3 v-if="!isLoading">or</h3>
       </b-col>
       <b-col class="action-container">
-        <h4>Breed two of the Buzzes you own to make a new one!</h4>
+        <h4>Create two of the Buzzes you own to make a new one!</h4>
         <b-form>
           <b-form-group id="based"
                         label="Based ID:"
@@ -38,8 +38,8 @@
                           placeholder="Enter Suit ID">
             </b-form-input>
           </b-form-group>
-          <b-button v-on:click="breedBuzzes" type="button">Breed Buzzes</b-button>
-          <p>Breeding Buzzes cost 0.05 Ether</p>
+          <b-button v-on:click="createBuzzes" type="button">Create Buzzes</b-button>
+          <p>Createing Buzzes cost 0.05 Ether</p>
         </b-form>
       </b-col>
     </b-row>
@@ -127,9 +127,9 @@ export default {
         this.isLoading = false;
       });
     },
-    breedBuzzes() {
+    createBuzzes() {
       this.isLoading = true;
-      this.contractInstance.methods.breedBuzzes(this.based, this.suit).send({
+      this.contractInstance.methods.createBuzzes(this.based, this.suit).send({
         from: this.account,
         value: web3.toWei(0.05, 'ether'),
       }).then((receipt) => {
