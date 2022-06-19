@@ -195,7 +195,7 @@ button {
 }
 .action-container h4 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .action-container p {
   text-align: center;
